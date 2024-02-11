@@ -82,7 +82,7 @@ $page = 1;
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width='40rem' src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					

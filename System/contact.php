@@ -57,9 +57,12 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a  href="./"><img  src="images/iitp_logo.png" alt="Logo" /></a>
+							<a  href="./">
+								<img width='40rem'  src="images/iitp_logo.png" alt="Logo" />
+							</a>
 						</div>
 					</div>
+					
 					
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
