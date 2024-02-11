@@ -5,12 +5,12 @@ include 'constants/settings.php';
 include 'constants/check-login.php';
 ?>
 <head>
-
+    
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - Contact Us</title>
+	<title>IIT Patna- Contact Us</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -23,7 +23,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/favicon.png">
+	<link rel="shortcut icon" href="images/iit_patna_logo.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -42,8 +42,7 @@ include 'constants/check-login.php';
 	<link rel="stylesheet" href="icons/flaticon-ventures/flaticon-ventures.css">
 
 	<link href="css/style.css" rel="stylesheet">
-
-	
+    
 </head>
 
 
@@ -58,7 +57,7 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+							<a  href="./"><img  src="images/iit_patna_logo_error.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
@@ -237,22 +236,22 @@ include 'constants/check-login.php';
 							<ul class="address-list">
 								<li>
 										<h5>Address</h5>
-										<address> Takoradi, <br/> PO.BOX AX40, <br/>School Junction</address>
+										<address> Bihta Kanpa Road, <br/> Dayalpur Daulatpur, <br/>Patna, Bihar 801106.</address>
 								</li>
 								<li>
-										<h5>Email</h5><a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a>
+										<h5>Email</h5><a href="mailto:iitpatna@gmail.com">iitpatna@gmail.com</a>
 								</li>
 								<li>
-										<h5>Phone Number</h5><a href="tel:+233 546 607 474">+233 546 607 474</a>
+										<h5>Phone Number</h5><a href="tel:+91 899592XXXX">+91 899592XXXX</a>
 								</li>
 
 								<li>
 										<h5>Social Networks</h5>
 										<div class="contact-social">
 										
-											<a href="<?php echo "$fb"; ?>" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
-											<a href="<?php echo "$tw"; ?>" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
-											<a href="<?php echo "$ig"; ?>" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
+											<a href="https://www.facebook.com/iitp.ac.in/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+											<a href="https://twitter.com/IITPAT" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+											<a href="https://www.instagram.com/iit_patna_official/?hl=en" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
 										
 										</div>
 								</li>
@@ -283,8 +282,8 @@ include 'constants/check-login.php';
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">About Nightingale Jobs</h5>
-											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
+											<h5 class="footer-title">About IIT Patna Faculty Recruitment</h5>
+											<p>Explore faculty opportunities at IIT Patna through our online job portal.</p>
 										
 										</div>
 
@@ -294,7 +293,7 @@ include 'constants/check-login.php';
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-menu clearfix">
 											<li><a href="./">Home</a></li>
-											<li><a href="job-list.php">Job List</a></li>
+											<li><a href="job-list.php">IIT Patna Recruitment</a></li>
 											<li><a href="employers.php">Employers</a></li>
 											<li><a href="employees.php">Employees</a></li>
 											<li><a href="contact.php">Contact Us</a></li>
@@ -310,11 +309,11 @@ include 'constants/check-login.php';
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">Nightingale Jobs Contact</h5>
+								<h5 class="footer-title">IIT Patna Contact</h5>
 								
-								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
-								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
-								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
+								<p>Address : Bihta Kanpa Rd, Patna, Dayalpur Daulatpur, Bihar 801106.</p>
+								<p>Email : <a href="iitpatna@gmail.com">iitpatna@gmail.com</a></p>
+								<p>Phone : <a href="tel:+91 989592XXXX">+91 989592XXXX</a></p>
 								
 
 
@@ -335,23 +334,23 @@ include 'constants/check-login.php';
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> IIT Patna</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by Nathaniel Nkrumah</a></li>
+									<li><a >Developed by IIT Patna</a></li>
 								</ul>
 							
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 								<ul class="bottom-footer-menu for-social">
-									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+									<li><a href="https://twitter.com/IITPAT"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+									<li><a href="https://www.facebook.com/iitp.ac.in/"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+									<li><a href="https://www.instagram.com/iit_patna_official/?hl=en"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
 								</ul>
 							</div>
 						
