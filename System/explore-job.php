@@ -29,6 +29,7 @@ try {
 	$jobcity = $row['city'];
 	$jobcountry = $row['country'];
 	
+	
 	$experience = $row['experience'];
 	$jobdescription = $row['description'];
 	$jobrespo = $row['responsibility'];
@@ -37,7 +38,6 @@ try {
 	$opendate = $row['date_posted'];
 	$compid = $row['category'];
 	
-
 	
 	}
 	}
@@ -302,8 +302,8 @@ $jobexpired = false;
 									<h2 class="heading mb-15"><?php echo "$jobtitle"; ?></h2>
 								
 									<div class="meta-div clearfix mb-25">
-										<span>at <a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$compname"; ?></a> as </span>
-										<?php echo "$sta"; ?>
+										<span>in <a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"></a> <?php echo "$jobtitle"; ?> </span>
+										
 									</div>
 									
 									<ul class="meta-list clearfix">
@@ -332,15 +332,11 @@ $jobexpired = false;
 									<h3>Company overview</h3>
 									<div class="image">
 										<?php 
-										if ($complogo == null) {
-										print '<center>No Company Logo</center>';
-										}else{
-										echo '<center><img class="autofit2" alt="image" title="'.$compname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
-										}
+										
 										?>
 									</div>
 									
-									<p><?php echo "$compbout"; ?></p>
+									
 									
 								</div>
 								
