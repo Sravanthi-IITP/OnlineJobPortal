@@ -68,17 +68,13 @@ include 'constants/check-login.php';
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-							<li>
-								<a href="job-list.php">Job List</a>
+						<li>
+								<a href="job-list.php">Apply Now</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="employees.php">Employees</a>
+								<a href="employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
