@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
 <?php 
@@ -5,12 +8,12 @@ include 'constants/settings.php';
 include 'constants/check-login.php';
 ?>
 <head>
-    
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>IIT Patna- Contact Us</title>
+	<title>Contact Us</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -23,7 +26,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/iit_patna_logo.png">
+	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -42,7 +45,8 @@ include 'constants/check-login.php';
 	<link rel="stylesheet" href="icons/flaticon-ventures/flaticon-ventures.css">
 
 	<link href="css/style.css" rel="stylesheet">
-    
+
+	
 </head>
 
 
@@ -57,20 +61,13 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a  href="./"><img  src="images/iit_patna_logo_error.png" alt="Logo" /></a>
+							<a href="./"><img width="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-						
-							<li>
-							
-								<a href="./">Home</a>
-								
-							</li>
-							
 							<li>
 								<a href="job-list.php">Job List</a>
 

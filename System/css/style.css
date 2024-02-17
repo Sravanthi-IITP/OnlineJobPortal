@@ -71,23 +71,28 @@ Last change:    23/05/2015
 .navbar.navbar-default {
     margin: 0;
     padding: 20px 0;
-    height: auto;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-wrapper {
-    min-height: 20px;
+    /* width: 4rem; */
+    /* height: 2rem; */
     float: left;
     margin: 0;
 }
 
-.logo-wrapper .logo {
+
+/* .logo-wrapper .logo {
     padding: 0;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -moz-transition: all 0.3s ease-in-out 0s;
     -ms-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-}
+} */
 
 .not-transparent-header .navbar-default {
     background: #20262F;
@@ -99,9 +104,9 @@ Last change:    23/05/2015
     float: left;
 }
 
-.logo-wrapper {
+/* .logo-wrapper {
     width: 15%;
-}
+} */
 
 .navbar-nav-wrapper {
     width: 70%;
@@ -337,9 +342,9 @@ ul.nav-mini li a {
 @media only screen and (max-width: 1199px) {}
 
 @media only screen and (max-width: 991px) {
-    .logo-wrapper {
-        width: 50%;
-    }
+    /* .logo-wrapper {
+        /* width: 50%; */
+    } */
     .navbar-nav-wrapper {
         width: 0%;
     }
@@ -351,6 +356,7 @@ ul.nav-mini li a {
         padding: 0;
         -webkit-transition: none;
         -moz-transition: none;
+        
         -ms-transition: none;
         -o-transition: none;
         transition: none;
@@ -439,7 +445,7 @@ ul.nav-mini li a {
     top: 50px;
 }
 
-.navbar-sticky .logo-wrapper .logo {}
+/* .navbar-sticky .logo-wrapper .logo {} */
 
 @media only screen and (max-width: 1199px) {}
 
@@ -5896,3 +5902,7 @@ ul.static-page-menu li.active a {
 }
 
 @media (max-width: 479px) {}
+
+#navbar{
+    background-color: red;
+}
