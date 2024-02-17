@@ -28,27 +28,15 @@ try {
 	$jobtitle = $row['title'];
 	$jobcity = $row['city'];
 	$jobcountry = $row['country'];
-	$jobcategory = $row['category'];
-	$jobtype = $row['type'];
+	
 	$experience = $row['experience'];
 	$jobdescription = $row['description'];
 	$jobrespo = $row['responsibility'];
 	$jobreq = $row['requirements'];
 	$closingdate = $row['closing_date'];
 	$opendate = $row['date_posted'];
-	$compid = $row['company'];
-	if ($jobtype == "Freelance") {
-	$sta = '<span class="label label-success">Freelance</span>';
-											  
-	}
-	if ($jobtype == "Part-time") {
-	$sta = '<span class="label label-danger">Part-time</span>';
-											  
-	}
-	if ($jobtype == "Full-time") {
-	$sta = '<span class="label label-warning">Full-time</span>';
-											  
-	}
+	$compid = $row['category'];
+	
 
 	
 	}
@@ -291,7 +279,7 @@ $jobexpired = false;
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="job-list.php">All jobs</a></li>
-						<li><a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$compname"; ?></a></li>
+						<li><a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"></a></li>
 						<li><span><?php echo "$jobtitle"; ?></span></li>
 					</ol>
 					

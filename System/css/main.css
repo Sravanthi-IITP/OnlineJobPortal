@@ -121,6 +121,9 @@ section {
     display: block;
 }
 
+
+
+
 body {
     line-height: 1;
 }
@@ -196,13 +199,17 @@ a:hover {
     text-decoration: none;
     outline: none;
 }
-
+.a {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
 a {
+    font-family: sans-serif;
     color: #33B6CB;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    cursor: poitner;
+    cursor: pointer;
     text-decoration: none;
     font-weight: 600;
 }
@@ -212,6 +219,7 @@ a:hover {
     text-decoration: none;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -224,37 +232,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: sans-serif;
     line-height: 1.5;
     color: #333;
     font-weight: 400;
-}
-
-h1 small,
-h2 small,
-h3 small,
-h4 small,
-h5 small,
-h6 small,
-.h1 small,
-.h2 small,
-.h3 small,
-.h4 small,
-.h5 small,
-.h6 small,
-h1 .small,
-h2 .small,
-h3 .small,
-h4 .small,
-h5 .small,
-h6 .small,
-.h1 .small,
-.h2 .small,
-.h3 .small,
-.h4 .small,
-.h5 .small,
-.h6 .small {
-    color: #ebebeb
 }
 
 h1,
@@ -264,22 +245,7 @@ h2,
 h3,
 .h3 {
     margin-top: 25px;
-    margin-bottom: 20px
-}
-
-h1 small,
-.h1 small,
-h2 small,
-.h2 small,
-h3 small,
-.h3 small,
-h1 .small,
-.h1 .small,
-h2 .small,
-.h2 .small,
-h3 .small,
-.h3 .small {
-    font-size: 65%
+    margin-bottom: 20px;
 }
 
 h4,
@@ -289,22 +255,7 @@ h5,
 h6,
 .h6 {
     margin-top: 18px;
-    margin-bottom: 13px
-}
-
-h4 small,
-.h4 small,
-h5 small,
-.h5 small,
-h6 small,
-.h6 small,
-h4 .small,
-.h4 .small,
-h5 .small,
-.h5 .small,
-h6 .small,
-.h6 .small {
-    font-size: 75%
+    margin-bottom: 13px;
 }
 
 h1,
@@ -352,30 +303,34 @@ h6:first-child,
     margin-top: 0;
 }
 
+/* Paragraphs */
 p {
-    margin: 0 0 18px
+    margin: 0 0 18px;
 }
 
 p:last-child {
     margin: 0;
 }
 
+/* Lead */
 .lead {
     margin-bottom: 21px;
     font-size: 19px;
     font-weight: 300;
-    line-height: 1.3
+    line-height: 1.3;
 }
 
 .lead.font-italic {
     letter-spacing: 0.5px;
 }
 
+/* Small text */
 small,
 .small {
-    font-size: 86%
+    font-size: 86%;
 }
 
+/* Blockquote */
 blockquote,
 .blockquote {
     overflow: hidden;
@@ -391,6 +346,7 @@ blockquote,
     border-left: 5px solid #33B6CB;
 }
 
+/* Horizontal rule */
 hr {
     border: none;
     border-top: 1px solid #ccc;
@@ -398,14 +354,13 @@ hr {
     width: 100%;
 }
 
+/* Media Queries */
 @media only screen and (max-width: 1199px) {
     h1,
     .h1 {
         font-size: 29px;
     }
 }
-
-@media only screen and (max-width: 991px) {}
 
 @media only screen and (max-width: 767px) {
     h1,
