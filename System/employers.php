@@ -24,7 +24,7 @@ $page = 1;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>IITP Employers</title>
+	<title>IITP Faculties</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -43,7 +43,7 @@ $page = 1;
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
+	<link rel="shortcut icon" href="images/ico/favicon.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -97,17 +97,13 @@ $page = 1;
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-							<li>
-								<a href="job-list.php">Job List</a>
+						<li>
+								<a href="job-list.php">Apply Now</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="employees.php">Employees</a>
+								<a href="employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
@@ -182,7 +178,7 @@ $page = 1;
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="./">Home</a></li>
-						<li><span>Employers</span></li>
+						<li><span>Facluties</span></li>
 					</ol>
 					
 				</div>
@@ -201,7 +197,7 @@ $page = 1;
 							<div class="GridLex-col-3_sm-12_xs-12">
 							
 								<div class="sorting-header">
-									<h3 class="sorting-title">Employers</h3>
+									<h3 class="sorting-title">Faculties</h3>
 								</div>
 								
 							</div>
