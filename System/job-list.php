@@ -34,7 +34,7 @@ $fromsearch = true;
 
 $slc_country = "$country";
 $slc_category = "$cate";
-$title = " $slc_country in $slc_category jobs ";
+$title = "$slc_category jobs in $slc_country";
 }else{
 $query1 = "SELECT * FROM tbl_jobs ORDER BY enc_id DESC LIMIT $page1,12";
 $query2 = "SELECT * FROM tbl_jobs ORDER BY enc_id DESC";	
@@ -108,17 +108,13 @@ $title = "Job List";
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-							<li>
-								<a href="job-list.php">Job List</a>
+						<li>
+								<a href="job-list.php">Apply Now</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">Employers</a>
-							</li>
-							
-							<li>
-								<a href="employees.php">Employees</a>
+								<a href="employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
@@ -334,8 +330,8 @@ $title = "Job List";
 								$post_date = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'd');
                                 $post_month = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'F');
                                 $post_year = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'Y');
-								
-								$compid = $row['category'];
+								$type = $row['type'];
+								$compid = $row['company'];
 								
 								$stmtb = $conn->prepare("SELECT * FROM tbl_users WHERE member_no = '$compid' and role = 'employer'");
                                 $stmtb->execute();
@@ -345,11 +341,31 @@ $title = "Job List";
 								$thecompname = $rowb['first_name'];	
 									
 								}
-								
+								if ($type == "Freelance") {
+								$sta = '<span class="job-label label label-success">Freelance</span>';
+											  
+								}
+								if ($type == "Part-time") {
+								$sta = '<span class="job-label label label-danger">Part-time</span>';
+											  
+								}
+								if ($type == "Full-time") {
+								$sta = '<span class="job-label label label-warning">Full-time</span>';
+											  
+								}
+		                        
 								?>
 										<div class="job-item-list">
 									
-										
+										<div class="image">
+										<?php 
+										if ($complogo == null) {
+										print '<center><img class="autofit3" alt="image"  src="images/blank.png"/></center>';
+										}else{
+										echo '<center><img class="autofit3" alt="image" title="'.$thecompname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
+										}
+										 ?>
+										</div>
 										
 										<div class="content">
 											<div class="job-item-list-info">
@@ -360,8 +376,8 @@ $title = "Job List";
 													
 														<h4 class="heading"><?php echo $row['title']; ?></h4>
 														<div class="meta-div clearfix mb-25">
-															<span> <a href="company.php?ref=<?php echo "$compid"; ?>"></a></span>
-															
+															<span>at <a href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$thecompname"; ?></a></span>
+															<?php echo "$sta"; ?>
 														</div>
 														
 														<p class="texing character_limit"><?php echo $row['description']; ?></p>
@@ -373,7 +389,6 @@ $title = "Job List";
 																<span>Country:</span>
 																<?php echo $row['country']; ?>
 															</li>
-															
 															<li>
 																<span>City:</span>
 																<?php echo $row['city']; ?>
