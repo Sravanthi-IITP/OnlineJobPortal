@@ -330,8 +330,8 @@ $title = "Job List";
 								$post_date = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'd');
                                 $post_month = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'F');
                                 $post_year = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'Y');
-								$type = $row['type'];
-								$compid = $row['company'];
+								
+								$compid = $row['title'];
 								
 								$stmtb = $conn->prepare("SELECT * FROM tbl_users WHERE member_no = '$compid' and role = 'employer'");
                                 $stmtb->execute();
@@ -341,19 +341,7 @@ $title = "Job List";
 								$thecompname = $rowb['first_name'];	
 									
 								}
-								if ($type == "Freelance") {
-								$sta = '<span class="job-label label label-success">Freelance</span>';
-											  
-								}
-								if ($type == "Part-time") {
-								$sta = '<span class="job-label label label-danger">Part-time</span>';
-											  
-								}
-								if ($type == "Full-time") {
-								$sta = '<span class="job-label label label-warning">Full-time</span>';
-											  
-								}
-		                        
+								
 								?>
 										<div class="job-item-list">
 									
@@ -376,8 +364,8 @@ $title = "Job List";
 													
 														<h4 class="heading"><?php echo $row['title']; ?></h4>
 														<div class="meta-div clearfix mb-25">
-															<span>at <a href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$thecompname"; ?></a></span>
-															<?php echo "$sta"; ?>
+															<span><a href="company.php?ref=<?php echo "$compid"; ?>"></a></span>
+															
 														</div>
 														
 														<p class="texing character_limit"><?php echo $row['description']; ?></p>

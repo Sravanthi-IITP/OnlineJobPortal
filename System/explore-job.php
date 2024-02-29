@@ -25,7 +25,7 @@ try {
 
     foreach($result as $row)
     {
-	$jobtitle = $row['title'];
+	$jobtitle = $row['category'];
 	$jobcity = $row['city'];
 	$jobcountry = $row['country'];
 	
@@ -36,7 +36,7 @@ try {
 	$jobreq = $row['requirements'];
 	$closingdate = $row['closing_date'];
 	$opendate = $row['date_posted'];
-	$compid = $row['category'];
+	$compid = $row['title'];
 	
 	
 	}
@@ -99,7 +99,7 @@ $jobexpired = false;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - <?php echo "$jobtitle"; ?></title>
+	<title>IIT Patna Job Portal-<?php echo "$jobtitle"; ?></title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -112,7 +112,6 @@ $jobexpired = false;
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/favicon.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -299,7 +298,7 @@ $jobexpired = false;
 							
 								<div class="job-detail-header text-center">
 											
-									<h2 class="heading mb-15"><?php echo "$jobtitle"; ?></h2>
+									<h2 class="heading mb-15"><?php echo "$compid"; ?></h2>
 								
 									<div class="meta-div clearfix mb-25">
 										<span>in <a target="_blank" href="company.php?ref=<?php echo "$compid"; ?>"></a> <?php echo "$jobtitle"; ?> </span>
@@ -329,7 +328,7 @@ $jobexpired = false;
 					
 								<div class="job-detail-company-overview clearfix">
 								
-									<h3>Company overview</h3>
+									<h3> overview</h3>
 									<div class="image">
 										<?php 
 										
@@ -342,12 +341,12 @@ $jobexpired = false;
 								
 								<div class="job-detail-content mt-30 clearfix">
 								
-									<h3>Job Description</h3>
+									<h3> Description</h3>
 
 									<p><?php echo "$jobdescription"; ?></p>
 
 									
-									<h3>Job Responsibilities</h3>
+									<h3> Responsibilities</h3>
 									
                                     <p><?php echo "$jobrespo"; ?></p>
 									
@@ -508,9 +507,9 @@ $jobexpired = false;
 								
 									<div class="col-sm-6 col-md-4">
 									
-										<div class="footer-about-us">
-											<h5 class="footer-title">About Nightingale Jobs</h5>
-											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
+									<div class="footer-about-us">
+											<h5 class="footer-title">About IIT Patna Faculty Recruitment</h5>
+											<p>Explore faculty opportunities at IIT Patna through our online job portal.</p>ob management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
 										
 										</div>
 
@@ -536,11 +535,11 @@ $jobexpired = false;
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">Nightingale Jobs Contact</h5>
+							<h5 class="footer-title">IIT Patna Contact</h5>
 								
-								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
-								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
-								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
+								<p>Address : Bihta Kanpa Rd, Patna, Dayalpur Daulatpur, Bihar 801106.</p>
+								<p>Email : <a href="iitpatna@gmail.com">iitpatna@gmail.com</a></p>
+								<p>Phone : <a href="tel:+91 989592XXXX">+91 989592XXXX</a></p>
 								
 
 							</div>
@@ -560,17 +559,16 @@ $jobexpired = false;
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> IIT Patna</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by Nathaniel Nkrumah</a></li>
+									<li><a >Developed by IIT Patna</a></li>
 								</ul>
 							
-							</div>
 							
 							<div class="col-sm-4 col-md-4">
 								<ul class="bottom-footer-menu for-social">

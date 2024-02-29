@@ -82,7 +82,7 @@ include 'constants/check-login.php';
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div >
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
@@ -103,7 +103,7 @@ include 'constants/check-login.php';
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
@@ -159,7 +159,7 @@ include 'constants/check-login.php';
 			
 		</header>
 
-		<!-- <div class="main-wrapper" style="background-image:url('images/iitp.jpg')"> -->
+		<div class="main-wrapper" style="background-image:url('images/iitp.jpg')"> 
 		<div class="main-wrapper" >
 
 		  
@@ -330,48 +330,7 @@ include 'constants/check-login.php';
 					<div class="row top-company-wrapper with-bg">
 
 							
-					<?php
-					require 'constants/db_config.php';
-					try {
-                    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-                    $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employer' ORDER BY rand() LIMIT 8");
-                    $stmt->execute();
-                    $result = $stmt->fetchAll();
-
-                    foreach($result as $row) {
-					$complogo = $row['avatar'];
-					?>
-					<div class="col-xss-12 col-xs-6 col-sm-4 col-md-3">
-							
-					<div class="top-company">
-					<div class="image">
-					<?php 
-					if ($complogo == null) {
-					print '<center><img class="autofit2" alt="image"  src="images/blank.png"/></center>';
-					}else{
-					echo '<center><img class="autofit2" alt="image"  src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
-					}
-					?>
-					</div>
-					<h6><?php echo $row['first_name'];?></h6>
-					<a target="_blank" href="company.php?ref=<?php echo $row['member_no']; ?>">View Company</a>
-					</div>
-							
-					</div>
-					<?php
-					
-                    {
-
-	                }
-					  
-	                }}catch(PDOException $e)
-                    {
-
-                    }
-	
-					?>
+				
 						
 
 						
@@ -418,10 +377,10 @@ include 'constants/check-login.php';
                             foreach($result as $row) {
 							$jobcity = $row['city'];
 							$jobcountry = $row['country'];
-							$type = $row['type'];
+							
 							$title = $row['title'];
 							$closingdate = $row['closing_date'];
-							$company_id = $row['company'];
+							$company_id = $row['title'];
 							$post_date = date_format(date_create_from_format('d/m/Y', $closingdate), 'd');
                             $post_month = date_format(date_create_from_format('d/m/Y', $closingdate), 'F');
                             $post_year = date_format(date_create_from_format('d/m/Y', $closingdate), 'Y');
@@ -435,24 +394,7 @@ include 'constants/check-login.php';
 								
 							}
 							
-							if ($type == "Freelance") {
-							$sta = '<div class="job-label label label-success">
-									Freelance
-									</div>';
-											  
-							}
-							if ($type == "Part-time") {
-							$sta = '<div class="job-label label label-danger">
-									Part-time
-									</div>';
-											  
-							}
-							if ($type == "Full-time") {
-							$sta = '<div class="job-label label label-warning">
-									Full-time
-									</div>';
-											  
-							}
+							
 							?>
 							<a class="recent-job-item clearfix" target="_blank" href="explore-job.php?jobid=<?php echo $row['job_id']; ?>">
 							<div class="GridLex-grid-middle">
@@ -479,7 +421,7 @@ include 'constants/check-login.php';
 							</div>
 							</div>
 							<div class="GridLex-col-2_xs-4_xss-12">
-							<?php echo "$sta"; ?>
+						
 							<span class="font12 block spacing1 font400 text-center">Due - <?php echo "$post_month"; ?> <?php echo "$post_date"; ?>, <?php echo "$post_year"; ?></span>
 							</div>
 							</div>
