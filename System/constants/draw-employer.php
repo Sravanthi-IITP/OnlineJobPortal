@@ -15,13 +15,19 @@
 												
 <div class="col-sm-12 col-md-12">
 
-
+<div class="form-group"> 
+<label>Company Name</label>
+<input class="form-control" placeholder="Enter your company name" name="company" required type="text"> 
+</div>
 												
 </div>
 
 <div class="col-sm-12 col-md-12">
 
-
+<div class="form-group"> 
+<label>Company Type</label>
+<input class="form-control" placeholder="Eg: Booking/Travel, Computer Software etc" name="type" required type="text"> 
+</div>
 												
 </div>
 												
