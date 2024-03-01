@@ -64,7 +64,7 @@ include 'constants/check-login.php';
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
@@ -84,7 +84,7 @@ include 'constants/check-login.php';
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 							<li><a  href="login.php">login</a></li>
 							<li><a data-toggle="modal" href="#registerModal">register</a></li>
@@ -109,10 +109,10 @@ include 'constants/check-login.php';
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
 						</div>
 
 					</div>

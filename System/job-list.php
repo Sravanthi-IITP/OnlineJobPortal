@@ -101,11 +101,11 @@ $title = "Job List";
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width = "50rem" src="images/ico//iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width = "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
@@ -125,7 +125,7 @@ $title = "Job List";
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
@@ -347,11 +347,11 @@ $title = "Job List";
 									
 										<div class="image">
 										<?php 
-										if ($complogo == null) {
-										print '<center><img class="autofit3" alt="image"  src="images/blank.png"/></center>';
-										}else{
-										echo '<center><img class="autofit3" alt="image" title="'.$thecompname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
-										}
+										
+										print '<center><img class="autofit3" alt="image"  src="images/default.jpg"/></center>';
+										
+										
+										
 										 ?>
 										</div>
 										
