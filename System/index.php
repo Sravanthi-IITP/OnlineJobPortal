@@ -142,9 +142,6 @@ include 'constants/check-login.php';
 						<div class="col-sm-6 col-md-6">
 							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
 						</div>
-						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
-						</div>
 
 					</div>
 				
