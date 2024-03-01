@@ -112,8 +112,8 @@ include 'constants/check-login.php';
 							<li><a href="'.$myrole.'">Profile</a></li>';
 						}else{
 						print '
-							<li><a href="login.php">login</a></li>
-							<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+						<li><a href="login.php">login</a></li>
+						<li><a href="applicant_register.php">Register</a></li>';						
 						}
 						
 						?>
@@ -127,24 +127,6 @@ include 'constants/check-login.php';
 				
 			</nav>
 
-			
-			<div class="nav-mini-wrapper">
-						<ul class="nav-mini sign-in">
-						<?php
-						if ($user_online == true) {
-						print '
-						    <li><a href="logout.php">logout</a></li>
-							<li><a href="'.$myrole.'">Profile</a></li>';
-						}else{
-						print '
-							<li><a href="login.php">login</a></li>
-							<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
-						}
-						
-						?>
-
-						</ul>
-					</div>
 
 			
 		</header>
