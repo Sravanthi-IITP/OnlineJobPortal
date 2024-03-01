@@ -90,11 +90,11 @@ $page = 1;
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width= "50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width= "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
@@ -114,7 +114,7 @@ $page = 1;
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
@@ -151,10 +151,10 @@ $page = 1;
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Employer</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Applicant</a>
 						</div>
 
 					</div>
@@ -178,7 +178,7 @@ $page = 1;
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="./">Home</a></li>
-						<li><span>Facluties</span></li>
+						<li><span>Faculties</span></li>
 					</ol>
 					
 				</div>
@@ -226,6 +226,7 @@ $page = 1;
                             foreach($result as $row)
                             {
 		                    $complogo = $row['avatar'];
+							$name=$row['first_name'];
 							?>
 							<div class="GridLex-col-3_sm-4_xs-6_xss-12">
 								
@@ -234,15 +235,19 @@ $page = 1;
 										
 							<div class="image">
 							<?php 
-							
+							if ($complogo == null) {
+							print '<center><img class="autofit2" alt="image"  src="images/default.jpg"/></center>';
+							}else{
+							echo '<center><img class="autofit2" alt="image"  src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
+							}
 							?>
 		
 							</div>
 											
 							<div class="content">
-							<h5 class="heading text-primary font700"><?php echo $row['first_name'];?></h5>
+							<h5><?php echo "$name";?></h5>
 							<p class="texting font600"><?php echo $row['title'];?><p>
-							<p class="mata-p clearfix"><span class="text-primary font700">25</span> <span class="font13">Active job post(s)</span> <span class="pull-right icon"><i class="fa fa-long-arrow-right"></i></span></p>
+							<p class="mata-p clearfix"><span class="text-primary font700"></span> <span class="font13">Know more</span> <span class="pull-right icon"><i class="fa fa-long-arrow-right"></i></span></p>
 							</div>
 										
 							</a>

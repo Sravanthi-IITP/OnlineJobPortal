@@ -214,26 +214,25 @@ class HtmlParser {
         }
         return $value;
     }
-
-    function setTextIndex ($index) {
-        $this->iHtmlTextIndex = $index;
-        if ($index >= $this->iHtmlTextLength) {
-            $this->iCurrentChar = -1;
-        }
-        else {
-            $this->iCurrentChar = $this->iHtmlText{$index};
-        }
+function setTextIndex($index) {
+    $this->iHtmlTextIndex = $index;
+    if ($index >= $this->iHtmlTextLength) {
+        $this->iCurrentChar = -1;
     }
-
-    function moveNext() {
-        if ($this->iHtmlTextIndex < $this->iHtmlTextLength) {
-            $this->setTextIndex ($this->iHtmlTextIndex + 1);
-            return true;
-        }
-        else {
-            return false;
-        }
+    else {
+        $this->iCurrentChar = $this->iHtmlText[$index];
     }
+}
+
+function moveNext() {
+    if ($this->iHtmlTextIndex < $this->iHtmlTextLength) {
+        $this->setTextIndex($this->iHtmlTextIndex + 1);
+        return true;
+    }
+    else {
+        return false;
+    }
+}
 
     function skipEndOfTag() {
         while (($ch = $this->iCurrentChar) !== -1) {
