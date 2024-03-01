@@ -87,7 +87,7 @@ include 'constants/check-login.php';
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
 							<li>
-								<a href="job-list.php">Apply Now</a>
+								<a  href="job-list.php">Apply Now</a>
 
 							</li>
 							
