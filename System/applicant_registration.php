@@ -16,8 +16,8 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="form-group"> 
-<label>Company Name</label>
-<input class="form-control" placeholder="Enter your company name" name="company" required type="text"> 
+<label>First Name</label>
+<input class="form-control" placeholder="Enter your first name" name="fname" required type="text"> 
 </div>
 												
 </div>
@@ -25,8 +25,8 @@
 <div class="col-sm-12 col-md-12">
 
 <div class="form-group"> 
-<label>Company Type</label>
-<input class="form-control" placeholder="Eg: Booking/Travel, Computer Software etc" name="type" required type="text"> 
+<label>Last Name</label>
+<input class="form-control" placeholder="Enter your last name" name="lname" required type="text"> 
 </div>
 												
 </div>
@@ -58,7 +58,7 @@
 												
 </div>
 												
-<input type="hidden" name="acctype" value="102">
+<input type="hidden" name="acctype" value="101">
 												
 												
 </div>

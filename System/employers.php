@@ -24,7 +24,7 @@ $page = 1;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>IITP Faculties</title>
+	<title>Nightingale Jobs - Employers</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -37,7 +37,7 @@ $page = 1;
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/iitp_.png">
+	<link rel="shortcut icon" href="images/ico/favicon.png">
 	
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
 	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
@@ -90,20 +90,35 @@ $page = 1;
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width= "50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+<<<<<<< HEAD
+							<a href="./"><img width= "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+=======
+							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+>>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-						<li>
-								<a href="job-list.php">Apply Now</a>
+						
+							<li>
+							
+								<a href="./">Home</a>
+								
+							</li>
+							
+							<li>
+								<a href="job-list.php">Job List</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">IITP Faculties</a>
+								<a href="employers.php">Employers</a>
+							</li>
+							
+							<li>
+								<a href="employees.php">Employees</a>
 							</li>
 							
 							<li>
@@ -114,7 +129,7 @@ $page = 1;
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
@@ -151,10 +166,10 @@ $page = 1;
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Employer</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Applicant</a>
 						</div>
 
 					</div>
@@ -178,7 +193,11 @@ $page = 1;
 				
 					<ol class="breadcrumb-list booking-step">
 						<li><a href="./">Home</a></li>
-						<li><span>Facluties</span></li>
+<<<<<<< HEAD
+						<li><span>Faculties</span></li>
+=======
+						<li><span>Employers</span></li>
+>>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
 					</ol>
 					
 				</div>
@@ -197,7 +216,7 @@ $page = 1;
 							<div class="GridLex-col-3_sm-12_xs-12">
 							
 								<div class="sorting-header">
-									<h3 class="sorting-title">Faculties</h3>
+									<h3 class="sorting-title">Employers</h3>
 								</div>
 								
 							</div>
@@ -226,6 +245,7 @@ $page = 1;
                             foreach($result as $row)
                             {
 		                    $complogo = $row['avatar'];
+							$name=$row['first_name'];
 							?>
 							<div class="GridLex-col-3_sm-4_xs-6_xss-12">
 								
@@ -235,7 +255,11 @@ $page = 1;
 							<div class="image">
 							<?php 
 							if ($complogo == null) {
+<<<<<<< HEAD
+							print '<center><img class="autofit2" alt="image"  src="images/default.jpg"/></center>';
+=======
 							print '<center><img class="autofit2" alt="image"  src="images/blank.png"/></center>';
+>>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
 							}else{
 							echo '<center><img class="autofit2" alt="image"  src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
 							}
@@ -244,9 +268,9 @@ $page = 1;
 							</div>
 											
 							<div class="content">
-							<h5 class="heading text-primary font700"><?php echo $row['first_name'];?></h5>
+							<h5><?php echo "$name";?></h5>
 							<p class="texting font600"><?php echo $row['title'];?><p>
-							<p class="mata-p clearfix"><span class="text-primary font700">25</span> <span class="font13">Active job post(s)</span> <span class="pull-right icon"><i class="fa fa-long-arrow-right"></i></span></p>
+							<p class="mata-p clearfix"><span class="text-primary font700"></span> <span class="font13">Know more</span> <span class="pull-right icon"><i class="fa fa-long-arrow-right"></i></span></p>
 							</div>
 										
 							</a>
@@ -342,8 +366,8 @@ $page = 1;
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">About IIT Patna Faculty Recruitment</h5>
-											<p>Explore faculty opportunities at IIT Patna through our online job portal.</p>
+											<h5 class="footer-title">About Nightingale Jobs</h5>
+											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
 										
 										</div>
 
@@ -353,7 +377,7 @@ $page = 1;
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-menu clearfix">
 											<li><a href="./">Home</a></li>
-											<li><a href="job-list.php">IIT Patna Recruitment</a></li>
+											<li><a href="job-list.php">Job List</a></li>
 											<li><a href="employers.php">Employers</a></li>
 											<li><a href="employees.php">Employees</a></li>
 											<li><a href="contact.php">Contact Us</a></li>
@@ -369,13 +393,12 @@ $page = 1;
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">IIT Patna Contact</h5>
+								<h5 class="footer-title">Nightingale Jobs Contact</h5>
 								
-								<p>Address : Bihta Kanpa Rd, Patna, Dayalpur Daulatpur, Bihar 801106.</p>
-								<p>Email : <a href="iitpatna@gmail.com">iitpatna@gmail.com</a></p>
-								<p>Phone : <a href="tel:+91 989592XXXX">+91 989592XXXX</a></p>
+								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
+								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
+								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
 								
-
 
 							</div>
 
@@ -394,23 +417,23 @@ $page = 1;
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> IIT Patna</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by IIT Patna</a></li>
+									<li><a >Developed by Nathaniel Nkrumah</a></li>
 								</ul>
 							
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 								<ul class="bottom-footer-menu for-social">
-									<li><a href="https://twitter.com/IITPAT"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="https://www.facebook.com/iitp.ac.in/"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="https://www.instagram.com/iit_patna_official/?hl=en"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
 								</ul>
 							</div>
 						

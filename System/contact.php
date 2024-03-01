@@ -61,11 +61,11 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
@@ -85,7 +85,7 @@ include 'constants/check-login.php';
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
