@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "job_portal";
+$dbname = "smar_recruit";
 ?>
 
 
