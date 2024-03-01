@@ -1,7 +1,7 @@
 <?php
-$servername = "sql12.freesqldatabase.com";
-$username = "sql12678896";
-$password = "qtjwTG66mK";
+$servername = "localhost";
+$username = "root";
+$password = "";
 $dbname = "job_portal";
 ?>
 
