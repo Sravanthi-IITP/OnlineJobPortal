@@ -50,7 +50,7 @@ $title = "Job List";
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>IITP - <?php echo "$title"; ?></title>
+	<title>Nightingale Jobs - <?php echo "$title"; ?></title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -63,7 +63,7 @@ $title = "Job List";
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
+	<link rel="shortcut icon" href="images/ico/favicon.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -101,20 +101,35 @@ $title = "Job List";
 					
 					<div class="logo-wrapper">
 						<div class="logo">
+<<<<<<< HEAD
 							<a href="./"><img width = "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+=======
+							<a href="./"><img src="images/logo.png" alt="Logo" /></a>
+>>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
 						</div>
 					</div>
 					
 					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
-						<li>
-								<a href="job-list.php">Apply Now</a>
+						
+							<li>
+							
+								<a href="./">Home</a>
+								
+							</li>
+							
+							<li>
+								<a href="job-list.php">Job List</a>
 
 							</li>
 							
 							<li>
-								<a href="employers.php">IITP Faculties</a>
+								<a href="employers.php">Employers</a>
+							</li>
+							
+							<li>
+								<a href="employees.php">Employees</a>
 							</li>
 							
 							<li>
@@ -195,7 +210,7 @@ $title = "Job List";
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
 										<select class="form-control" name="category" required/>
-										<option value="">-Select Department-</option>
+										<option value="">-Select category-</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
@@ -231,7 +246,7 @@ $title = "Job List";
 								<div class="col-xss-12 col-xs-6 col-sm-6 col-md-5">
 									<div class="form-group form-lg">
 										<select class="form-control" name="country" required/>
-										<option value="">-Select Position-</option>
+										<option value="">-Select country-</option>
 										 <?php
 										 require 'constants/db_config.php';
 										 try {
@@ -330,8 +345,8 @@ $title = "Job List";
 								$post_date = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'd');
                                 $post_month = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'F');
                                 $post_year = date_format(date_create_from_format('d/m/Y', $row['closing_date']), 'Y');
-								
-								$compid = $row['title'];
+								$type = $row['type'];
+								$compid = $row['company'];
 								
 								$stmtb = $conn->prepare("SELECT * FROM tbl_users WHERE member_no = '$compid' and role = 'employer'");
                                 $stmtb->execute();
@@ -341,7 +356,19 @@ $title = "Job List";
 								$thecompname = $rowb['first_name'];	
 									
 								}
-								
+								if ($type == "Freelance") {
+								$sta = '<span class="job-label label label-success">Freelance</span>';
+											  
+								}
+								if ($type == "Part-time") {
+								$sta = '<span class="job-label label label-danger">Part-time</span>';
+											  
+								}
+								if ($type == "Full-time") {
+								$sta = '<span class="job-label label label-warning">Full-time</span>';
+											  
+								}
+		                        
 								?>
 										<div class="job-item-list">
 									
@@ -364,8 +391,8 @@ $title = "Job List";
 													
 														<h4 class="heading"><?php echo $row['title']; ?></h4>
 														<div class="meta-div clearfix mb-25">
-															<span><a href="company.php?ref=<?php echo "$compid"; ?>"></a></span>
-															
+															<span>at <a href="company.php?ref=<?php echo "$compid"; ?>"><?php echo "$thecompname"; ?></a></span>
+															<?php echo "$sta"; ?>
 														</div>
 														
 														<p class="texing character_limit"><?php echo $row['description']; ?></p>
@@ -508,8 +535,8 @@ $title = "Job List";
 									<div class="col-sm-6 col-md-4">
 									
 										<div class="footer-about-us">
-											<h5 class="footer-title">About IIT Patna Faculty Recruitment</h5>
-											<p>Explore faculty opportunities at IIT Patna through our online job portal.</p>
+											<h5 class="footer-title">About Nightingale Jobs</h5>
+											<p>Nightingale Jobs is a job portal, online job management system developed by Nathaniel Nkrumah for his project in february 2018.</p>
 										
 										</div>
 
@@ -519,7 +546,7 @@ $title = "Job List";
 										<h5 class="footer-title">Quick Links</h5>
 										<ul class="footer-menu clearfix">
 											<li><a href="./">Home</a></li>
-											<li><a href="job-list.php">IIT Patna Recruitment</a></li>
+											<li><a href="job-list.php">Job List</a></li>
 											<li><a href="employers.php">Employers</a></li>
 											<li><a href="employees.php">Employees</a></li>
 											<li><a href="contact.php">Contact Us</a></li>
@@ -535,13 +562,12 @@ $title = "Job List";
 							
 							<div class="col-sm-12 col-md-3 mt-30-sm">
 							
-								<h5 class="footer-title">IIT Patna Contact</h5>
+								<h5 class="footer-title">Nightingale Jobs Contact</h5>
 								
-								<p>Address : Bihta Kanpa Rd, Patna, Dayalpur Daulatpur, Bihar 801106.</p>
-								<p>Email : <a href="iitpatna@gmail.com">iitpatna@gmail.com</a></p>
-								<p>Phone : <a href="tel:+91 989592XXXX">+91 989592XXXX</a></p>
+								<p>Address : Takoradi, School Junction PO.BOX AX40</p>
+								<p>Email : <a href="mailto:nightingale.nath2@gmail.com">nightingale.nath2@gmail.com</a></p>
+								<p>Phone : <a href="tel:+233546607474">+233 546 607 474</a></p>
 								
-
 
 							</div>
 
@@ -560,23 +586,23 @@ $title = "Job List";
 						
 							<div class="col-sm-4 col-md-4">
 					
-								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> IIT Patna</p>
+								<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> Nightingale Vision Software</p>
 								
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 							
 								<ul class="bottom-footer-menu">
-									<li><a >Developed by IIT Patna</a></li>
+									<li><a >Developed by Nathaniel Nkrumah</a></li>
 								</ul>
 							
 							</div>
 							
 							<div class="col-sm-4 col-md-4">
 								<ul class="bottom-footer-menu for-social">
-									<li><a href="https://twitter.com/IITPAT"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
-									<li><a href="https://www.facebook.com/iitp.ac.in/"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
-									<li><a href="https://www.instagram.com/iit_patna_official/?hl=en"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+									<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+									<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+									<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
 								</ul>
 							</div>
 						
