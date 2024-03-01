@@ -82,7 +82,7 @@ include 'constants/check-login.php';
 						</div>
 					</div>
 					
-					<div >
+					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
@@ -103,7 +103,7 @@ include 'constants/check-login.php';
 				
 					</div>
 
-					<div >
+					<div class="nav-mini-wrapper">
 						<ul class="nav-mini sign-in">
 						<?php
 						if ($user_online == true) {
@@ -159,7 +159,7 @@ include 'constants/check-login.php';
 			
 		</header>
 
-		<div class="main-wrapper" style="background-image:url('images/iitp.jpg')"> 
+		<!-- <div class="main-wrapper" style="background-image:url('images/iitp.jpg')"> -->
 		<div class="main-wrapper" >
 
 		  
@@ -330,7 +330,48 @@ include 'constants/check-login.php';
 					<div class="row top-company-wrapper with-bg">
 
 							
-				
+					<?php
+					require 'constants/db_config.php';
+					try {
+                    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                    $stmt = $conn->prepare("SELECT * FROM tbl_users WHERE role = 'employer' ORDER BY rand() LIMIT 8");
+                    $stmt->execute();
+                    $result = $stmt->fetchAll();
+
+                    foreach($result as $row) {
+					$complogo = $row['avatar'];
+					?>
+					<div class="col-xss-12 col-xs-6 col-sm-4 col-md-3">
+							
+					<div class="top-company">
+					<div class="image">
+					<?php 
+					if ($complogo == null) {
+					print '<center><img class="autofit2" alt="image"  src="images/blank.png"/></center>';
+					}else{
+					echo '<center><img class="autofit2" alt="image"  src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
+					}
+					?>
+					</div>
+					<h6><?php echo $row['first_name'];?></h6>
+					<a target="_blank" href="company.php?ref=<?php echo $row['member_no']; ?>">View Company</a>
+					</div>
+							
+					</div>
+					<?php
+					
+                    {
+
+	                }
+					  
+	                }}catch(PDOException $e)
+                    {
+
+                    }
+	
+					?>
 						
 
 						
