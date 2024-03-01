@@ -86,8 +86,8 @@ include 'constants/check-login.php';
 
 					<div class="nav-mini-wrapper">
 						<ul class="nav-mini sign-in">
-							<li><a  href="login.php">login</a></li>
-							<li><a data-toggle="modal" href="#registerModal">register</a></li>
+						<li><a href="login.php">login</a></li>
+							<li><a href="applicant_register.php">Register</a></li>
 						</ul>
 					</div>
 				
@@ -96,38 +96,6 @@ include 'constants/check-login.php';
 				<div id="slicknav-mobile"></div>
 				
 			</nav>
-	
-			<div id="registerModal" class="modal fade login-box-wrapper" tabindex="-1" style="display: none;" data-backdrop="static" data-keyboard="false" data-replace="true">
-			
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title text-center">Create your account for free</h4>
-				</div>
-				
-				<div class="modal-body">
-				
-					<div class="row gap-20">
-					
-						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
-						</div>
-						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
-						</div>
-
-					</div>
-				
-				</div>
-				
-				<div class="modal-footer text-center">
-					<button type="button" data-dismiss="modal" class="btn btn-primary btn-inverse">Close</button>
-				</div>
-				
-			</div>
-
-
-
-			
 		</header>
 
 
