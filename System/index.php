@@ -113,7 +113,7 @@ include 'constants/check-login.php';
 						}else{
 						print '
 						<li><a href="login.php">login</a></li>
-						<li><a href="applicant_register.php">Register</a></li>';						
+						<li><a href="applicant_registration.php">Register</a></li>';						
 						}
 						
 						?>
