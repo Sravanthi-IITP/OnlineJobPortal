@@ -24,10 +24,14 @@ include 'constants/check-login.php';
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<link rel="shortcut icon" href="images/iitp_logo.png">
 =======
 	<link rel="shortcut icon" href="images/ico/favicon.png">
 >>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
+=======
+	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
+>>>>>>> 9a36975814addfb3e457decfe5c75c5a639354cf
 
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
@@ -83,6 +87,7 @@ include 'constants/check-login.php';
 					<div class="logo-wrapper">
 						<div class="logo">
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<a href="./"><img width ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
@@ -95,6 +100,13 @@ include 'constants/check-login.php';
 					
 					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
 >>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
+=======
+							<a href="./"><img width ="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+						</div>
+					</div>
+					
+					<div >
+>>>>>>> 9a36975814addfb3e457decfe5c75c5a639354cf
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						
@@ -163,6 +175,7 @@ include 'constants/check-login.php';
 					
 						<div class="col-sm-6 col-md-6">
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
@@ -173,6 +186,12 @@ include 'constants/check-login.php';
 						<div class="col-sm-6 col-md-6">
 							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Employee</a>
 >>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
+=======
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
+						</div>
+						<div class="col-sm-6 col-md-6">
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
+>>>>>>> 9a36975814addfb3e457decfe5c75c5a639354cf
 						</div>
 
 					</div>
@@ -464,8 +483,12 @@ include 'constants/check-login.php';
 							
 =======
 							$jobcountry = $row['country'];
+<<<<<<< HEAD
 							$type = $row['type'];
 >>>>>>> 549325bc76aaeec8a981dac0e227b3f682620348
+=======
+							
+>>>>>>> 9a36975814addfb3e457decfe5c75c5a639354cf
 							$title = $row['title'];
 							$closingdate = $row['closing_date'];
 							$company_id = $row['company'];
