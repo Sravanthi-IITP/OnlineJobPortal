@@ -101,16 +101,28 @@ $page = 1;
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
+<<<<<<< HEAD
 								<a href="../job-list.php">Apply Now</a>
+=======
+								<a href="job-list.php">Apply Now</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 							</li>
 							
 							<li>
+<<<<<<< HEAD
 								<a href="../employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
 								<a href="../contact.php">Contact Us</a>
+=======
+								<a href="employers.php">IITP Faculties</a>
+							</li>
+							
+							<li>
+								<a href="contact.php">Contact Us</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 							</li>
 
 						</ul>
@@ -523,6 +535,99 @@ $page = 1;
 			<div class="main-footer">
 			
 				<div class="container">
+<<<<<<< HEAD
+=======
+				
+					<div class="row">
+					
+						<div class="col-sm-12 col-md-9">
+						
+							<div class="row">
+							
+								<div class="col-sm-6 col-md-4">
+								
+									<div class="footer-about-us">
+										<h5 class="footer-title">About IIT Patna Faculty Recruitment</h5>
+										<p>Explore faculty opportunities at IIT Patna through our online job portal.</p>
+									
+									</div>
+
+								</div>
+								
+								<div class="col-sm-6 col-md-5 mt-30-xs">
+									<h5 class="footer-title">Quick Links</h5>
+									<ul class="footer-menu clearfix">
+										<li><a href="./">Home</a></li>
+										<li><a href="job-list.php">Faculty Recruitment</a></li>
+										<li><a href="employers.php">Employers</a></li>
+										
+										<li><a href="contact.php">Contact Us</a></li>
+										<li><a href="#">Go to top</a></li>
+
+									</ul>
+								
+								</div>
+
+							</div>
+
+						</div>
+						
+						<div class="col-sm-12 col-md-3 mt-30-sm">
+						
+							<h5 class="footer-title">IIT Patna Contact</h5>
+							
+							<p>Address : Bihta Kanpa Rd, Patna, Dayalpur Daulatpur, Bihar 801106</p>
+							<p>Email : <a href="mailto:iitpatna@gmail.com">iitpatna@gmail.com</a></p>
+							<p>Phone : <a href="tel:+91 989592XXXX">+91 989592XXXX</a></p>
+							
+
+						</div>
+
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="bottom-footer">
+			
+				<div class="container">
+				
+					<div class="row">
+					
+						<div class="col-sm-4 col-md-4">
+				
+							<p class="copy-right">&#169; Copyright <?php echo date('Y'); ?> IIT Patna</p>
+							
+						</div>
+						
+						<div class="col-sm-4 col-md-4">
+						
+							<ul class="bottom-footer-menu">
+								
+							</ul>
+						
+						</div>
+						
+						<div class="col-sm-4 col-md-4">
+							<ul class="bottom-footer-menu for-social">
+								<li><a href="<?php echo "$tw"; ?>"><i class="ri ri-twitter" data-toggle="tooltip" data-placement="top" title="twitter"></i></a></li>
+								<li><a href="<?php echo "$fb"; ?>"><i class="ri ri-facebook" data-toggle="tooltip" data-placement="top" title="facebook"></i></a></li>
+								<li><a href="<?php echo "$ig"; ?>"><i class="ri ri-instagram" data-toggle="tooltip" data-placement="top" title="instagram"></i></a></li>
+							</ul>
+						</div>
+					
+					</div>
+
+				</div>
+				
+			</div>
+		
+		</footer><footer class="footer-wrapper">
+			
+				<div class="main-footer">
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 				
 					<div class="row">
 					

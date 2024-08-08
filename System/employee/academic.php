@@ -33,7 +33,7 @@ $page = 1;
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Nightingale Jobs - Academic Qualifications</title>
+	<title> Academic Qualifications</title>
 	<meta name="description" content="Online Job Management / Job Portal" />
 	<meta name="keywords" content="job, work, resume, applicants, application, employee, employer, hire, hiring, human resource management, hr, online job management, company, worker, career, recruiting, recruitment" />
 	<meta name="author" content="BwireSoft">
@@ -93,12 +93,17 @@ $page = 1;
 					
 				<div class="logo-wrapper">
 						<div class="logo">
+<<<<<<< HEAD
 							<a href="./"><img width = "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+=======
+							<a href="./"><img width= "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 						</div>
 					</div>
 					
 					<div  class="navbar-nav-wrapper navbar-arrow">
 					
+<<<<<<< HEAD
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
 								<a href="../job-list.php">Apply Now</a>
@@ -112,11 +117,42 @@ $page = 1;
 							<li>
 								<a href="../contact.php">Contact Us</a>
 							</li>
+=======
+					<ul class="nav navbar-nav" id="responsive-menu">
+					<li>
+							<a href="job-list.php">Apply Now</a>
 
-						</ul>
-				
-					</div>
+						</li>
+						
+						<li>
+							<a href="employers.php">IITP Faculties</a>
+						</li>
+						
+						<li>
+							<a href="contact.php">Contact Us</a>
+						</li>
 
+					</ul>
+			
+				</div>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
+
+				<div >
+					<ul class="nav-mini sign-in">
+					<?php
+					if ($user_online == true) {
+					print '
+						<li><a href="../logout.php">logout</a></li>
+						<li><a href="'.$myrole.'">Profile</a></li>';
+					}else{
+					print '
+						<li><a href="login.php">login</a></li>
+						<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+					}
+					
+					?>
+
+<<<<<<< HEAD
 					<div >
 						<ul class="nav-mini sign-in">
 						<?php
@@ -134,6 +170,10 @@ $page = 1;
 
 						</ul>
 					</div>
+=======
+					</ul>
+				</div>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 				
 				</div>
 				
@@ -261,7 +301,7 @@ $page = 1;
                                     $result = $stmt->fetchAll();
                                     foreach($result as $row)
                                     {
-									 $ccountry = $row['country'];
+									 $ccountry = $row['country1'];
 									 $institution = $row['institution'];
 									 $course = $row['course'];
 									 $timeframe = $row['timeframe'];
@@ -628,8 +668,11 @@ $page = 1;
 				</div>
 			
 			</div>
+<<<<<<< HEAD
 
 		
+=======
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 			<footer class="footer-wrapper">
 			
 			<div class="main-footer">
@@ -724,6 +767,10 @@ $page = 1;
 			</div>
 		
 		</footer>
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 		</div>
 
 

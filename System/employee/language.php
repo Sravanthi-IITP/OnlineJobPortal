@@ -46,7 +46,11 @@ $page = 1;
     <meta property="og:image:alt" content="Bwire Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
+<<<<<<< HEAD
 	<link rel="shortcut icon" href="/images/iitp_logo.png">
+=======
+	<link rel="shortcut icon" href="../images/iitp_logo.png">
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" media="screen">	
@@ -101,16 +105,28 @@ $page = 1;
 					
 					<ul class="nav navbar-nav" id="responsive-menu">
 					<li>
+<<<<<<< HEAD
 							<a href="../job-list.php">Apply Now</a>
+=======
+							<a href="job-list.php">Apply Now</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 						</li>
 						
 						<li>
+<<<<<<< HEAD
 							<a href="../employers.php">IITP Faculties</a>
 						</li>
 						
 						<li>
 							<a href="../contact.php">Contact Us</a>
+=======
+							<a href="employers.php">IITP Faculties</a>
+						</li>
+						
+						<li>
+							<a href="contact.php">Contact Us</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 						</li>
 
 					</ul>

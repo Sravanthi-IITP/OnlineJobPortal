@@ -83,16 +83,28 @@ header("location:../");
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
 							<li>
+<<<<<<< HEAD
 								<a href="../job-list.php">Apply Now</a>
+=======
+								<a href="job-list.php">Apply Now</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 							</li>
 							
 							<li>
+<<<<<<< HEAD
 								<a href="../employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
 								<a href="../contact.php">Contact Us</a>
+=======
+								<a href="employers.php">IITP Faculties</a>
+							</li>
+							
+							<li>
+								<a href="contact.php">Contact Us</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 							</li>
 
 						</ul>
@@ -208,6 +220,7 @@ header("location:../");
 							</div>
 							
 							<div class="GridLex-col-9_sm-8_xs-12">
+<<<<<<< HEAD
     <div class="admin-content-wrapper">
         <div class="admin-section-title">
             <h2>Profile</h2>
@@ -411,6 +424,226 @@ header("location:../");
         </form>
     </div>
 </div>
+=======
+							
+								<div class="admin-content-wrapper">
+
+									<div class="admin-section-title">
+									
+										<h2>Profile</h2>
+										<p>Your last loged-in: <span class="text-primary"><?php echo "$mylogin"; ?></span></p>
+										
+									</div>
+									
+									<form class="post-form-wrapper" action="app/update-profile.php" method="POST" autocomplete="off">
+								
+											<div class="row gap-20">
+											<?php require 'constants/check_reply.php'; ?>
+
+												<div class="clear"></div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>First Name</label>
+														<input name="fname" required type="text" class="form-control" value="<?php echo "$myfname"; ?>" placeholder="Enter your first name">
+													</div>
+													
+												</div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Last Name</label>
+														<input name="lname" required type="text" class="form-control" value="<?php echo "$mylname"; ?>" placeholder="Enter your last name">
+													</div>
+													
+												</div>
+												
+												<div class="clear"></div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Born</label>
+														<div class="row gap-5">
+															<div class="col-xs-3 col-sm-3">
+																<select name="date" required class="selectpicker form-control" data-live-search="false">
+																	<option disabled value="">day</option>
+                                                                     <?php 
+                                                                      $x = 1; 
+
+                                                                      while($x <= 31) {
+                                         
+												                      if ($x < 10) {
+														              $x = "0$x";
+													                  print '<option '; if ($mydate == $x ) { print ' selected '; } print ' value="'.$x.'">'.$x.'</option>';
+													                  }else{
+													                  print '<option '; if ($mydate == $x ) { print ' selected '; } print ' value="'.$x.'">'.$x.'</option>';
+													                  }
+                                                                      $x++;
+                                                                       } 
+                                                                     ?>
+																</select>
+															</div>
+															<div class="col-xs-5 col-sm-5">
+																<select name="month" required class="selectpicker form-control" data-live-search="false">
+                                                                     <?php 
+                                                                      $x = 1; 
+
+                                                                      while($x <= 12) {
+                                         
+												                      if ($x < 10) {
+														              $x = "0$x";
+													                  print '<option '; if ($mymonth == $x ) { print ' selected '; } print ' value="'.$x.'">'.$x.'</option>';
+													                  }else{
+													                  print '<option '; if ($mymonth == $x ) { print ' selected '; } print ' value="'.$x.'">'.$x.'</option>';
+													                  }
+                                                                      $x++;
+                                                                       } 
+                                                                     ?>
+																</select>
+															</div>
+															<div class="col-xs-4 col-sm-4">
+																<select name="year" class="selectpicker form-control" data-live-search="false">
+													            <?php 
+                                                                 $x = date('Y'); 
+                                                                 $yr = 60;
+													             $y2 = $x - $yr;
+                                                                 while($x > $y2) {
+                                         
+													             print '<option '; if ($myyear == $x ) { print ' selected '; } print ' value="'.$x.'">'.$x.'</option>';
+                                                                 $x = $x - 1;
+                                                                  } 
+                                                                  ?>
+																</select>
+															</div>
+														</div>
+													</div>
+													
+												</div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Email</label>
+														<input type="email" name="email" required class="form-control" value="<?php echo "$myemail"; ?>" placeholder="Enter your email address">
+													</div>
+													
+												</div>
+												
+												<div class="clear"></div>
+
+												<div class="form-group">
+												
+													<div class="col-sm-12">
+														<label>Education Level</label>
+													</div>
+													
+													<div class="col-sm-6 col-md-4">
+                                                    <input value="<?php echo "$myedu"; ?>" name="education" type="text" required class="form-control" placeholder="Eg: Diploma, Degree...etc">
+													</div>
+													
+													<div class="col-sm-6 col-md-4">
+														<input value="<?php echo "$mytitle"; ?>" name="title" required type="text" class="form-control mb-15" placeholder="Eg: Computer Science, IT...etc">
+													</div>
+														
+												</div>
+												
+												<div class="clear"></div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Gender</label>
+														<select name="gender" required class="selectpicker show-tick form-control" data-live-search="false">
+															<option disabled value="">Select</option>
+															<option <?php if ($mygender == "Male") { print ' selected '; } ?> value="Male">Male</option>
+															<option <?php if ($mygender == "Female") { print ' selected '; } ?>value="Female">Female</option>
+														</select>
+													</div>
+													
+												</div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>City/town</label>
+														<input name="city" required type="text" class="form-control" value="<?php echo "$mycity"; ?>">
+													</div>
+													
+												</div>
+												
+												<div class="clear"></div>
+												
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Street</label>
+														<input name="street" required type="text" class="form-control" value="<?php echo "$mystreet"; ?>">
+													</div>
+													
+												</div>
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Zip Code</label>
+														<input name="zip" required type="text" class="form-control" value="<?php echo "$myzip"; ?>">
+													</div>
+													
+												</div>
+
+												<div class="clear"></div>
+												
+
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Position</label>
+														<select name="country" required class="selectpicker show-tick form-control" data-live-search="true">
+															<option disabled value="">Select</option>
+						                                   <?php
+														   require '../constants/db_config.php';
+														   try {
+                                                           $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+                                                           $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+	
+                                                           $stmt = $conn->prepare("SELECT * FROM tbl_countries ORDER BY country_name");
+                                                           $stmt->execute();
+                                                           $result = $stmt->fetchAll();
+  
+                                                           foreach($result as $row)
+                                                           {
+		                                                    ?> <option <?php if ($mycountry == $row['country_name']) { print ' selected '; } ?> value="<?php echo $row['country_name']; ?>"><?php echo $row['country_name']; ?></option> <?php
+	 
+	                                                        }
+
+					  
+	                                                       }catch(PDOException $e)
+                                                           {
+
+                                                           }
+	
+														   ?>
+														</select>
+													</div>
+													
+												</div>
+												
+												<div class="col-sm-6 col-md-4">
+												
+													<div class="form-group">
+														<label>Phone Number</label>
+														<input type="text" name="phone" required class="form-control" value="<?php echo "$myphone"; ?>">
+													</div>
+													
+												</div>
+
+												
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 
 

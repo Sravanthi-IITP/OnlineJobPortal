@@ -100,16 +100,28 @@ $page = 1;
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
+<<<<<<< HEAD
 								<a href="../job-list.php">Apply Now</a>
+=======
+								<a href="job-list.php">Apply Now</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 
 							</li>
 							
 							<li>
+<<<<<<< HEAD
 								<a href="../employers.php">IITP Faculties</a>
 							</li>
 							
 							<li>
 								<a href="../contact.php">Contact Us</a>
+=======
+								<a href="employers.php">IITP Faculties</a>
+							</li>
+							
+							<li>
+								<a href="contact.php">Contact Us</a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 							</li>
 
 						</ul>

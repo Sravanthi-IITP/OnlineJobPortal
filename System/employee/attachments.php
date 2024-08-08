@@ -94,12 +94,17 @@ $page = 1;
 					
 				<div class="logo-wrapper">
 						<div class="logo">
+<<<<<<< HEAD
 							<a href="./"><img width = "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+=======
+							<a href="./"><img width= "50rem" src="images/iitp_logo.png" alt="Logo" /></a>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 						</div>
 					</div>
 					
 					<div  class="navbar-nav-wrapper navbar-arrow">
 					
+<<<<<<< HEAD
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
 								<a href="../job-list.php">Apply Now</a>
@@ -113,11 +118,42 @@ $page = 1;
 							<li>
 								<a href="../contact.php">Contact Us</a>
 							</li>
+=======
+					<ul class="nav navbar-nav" id="responsive-menu">
+					<li>
+							<a href="job-list.php">Apply Now</a>
 
-						</ul>
-				
-					</div>
+						</li>
+						
+						<li>
+							<a href="employers.php">IITP Faculties</a>
+						</li>
+						
+						<li>
+							<a href="contact.php">Contact Us</a>
+						</li>
 
+					</ul>
+			
+				</div>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
+
+				<div >
+					<ul class="nav-mini sign-in">
+					<?php
+					if ($user_online == true) {
+					print '
+						<li><a href="../logout.php">logout</a></li>
+						<li><a href="'.$myrole.'">Profile</a></li>';
+					}else{
+					print '
+						<li><a href="login.php">login</a></li>
+						<li><a data-toggle="modal" href="#registerModal">register</a></li>';						
+					}
+					
+					?>
+
+<<<<<<< HEAD
 					<div >
 						<ul class="nav-mini sign-in">
 						<?php
@@ -135,6 +171,10 @@ $page = 1;
 
 						</ul>
 					</div>
+=======
+					</ul>
+				</div>
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 				
 				</div>
 				
@@ -596,6 +636,10 @@ $page = 1;
 			</div>
 		
 		</footer>
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 111f2ffa19ef33b7961cad02f1ca51b78c76f520
 		</div>
 
 
