@@ -23,7 +23,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
+	<link rel="shortcut icon" href="images/iitp_logo.png">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
 	<link href="css/animate.css" rel="stylesheet">
@@ -60,11 +60,11 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width  ="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width  ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
-					<div id="navbar" class="navbar-nav-wrapper navbar-arrow">
+					<div  class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 						<li>
@@ -84,7 +84,7 @@ include 'constants/check-login.php';
 				
 					</div>
 
-					<div class="nav-mini-wrapper">
+					<div >
 						<ul class="nav-mini sign-in">
 							<li><a  href="login.php">login</a></li>
 							<li><a data-toggle="modal" href="#registerModal">register</a></li>
@@ -109,10 +109,10 @@ include 'constants/check-login.php';
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
 						</div>
 
 					</div>

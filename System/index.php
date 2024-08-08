@@ -23,7 +23,7 @@ include 'constants/check-login.php';
     <meta property="og:image:alt" content="Nightingale Jobs" />
     <meta property="og:description" content="Online Job Management / Job Portal" />
 
-	<link rel="shortcut icon" href="images/ico/iitp_logo.png">
+	<link rel="shortcut icon" href="images/iitp_logo.png">
 
 
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" media="screen">	
@@ -78,11 +78,11 @@ include 'constants/check-login.php';
 					
 					<div class="logo-wrapper">
 						<div class="logo">
-							<a href="./"><img width ="50rem" src="images/ico/iitp_logo.png" alt="Logo" /></a>
+							<a href="./"><img width ="50rem" src="images/iitp_logo.png" alt="Logo" /></a>
 						</div>
 					</div>
 					
-					<div >
+					<div class="navbar-nav-wrapper navbar-arrow">
 					
 						<ul class="nav navbar-nav" id="responsive-menu">
 							
@@ -140,10 +140,10 @@ include 'constants/check-login.php';
 					<div class="row gap-20">
 					
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
+							<a href="register.php?p=Employer" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
 						</div>
 						<div class="col-sm-6 col-md-6">
-							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Admin</a>
+							<a href="register.php?p=Employee" class="btn btn-facebook btn-block mb-5-xs">Register as Applicant</a>
 						</div>
 
 					</div>
@@ -376,7 +376,7 @@ include 'constants/check-login.php';
 
                             foreach($result as $row) {
 							$jobcity = $row['city'];
-							$jobcountry = $row['country'];
+							$jobcountry = $row['category'];
 							
 							$title = $row['title'];
 							$closingdate = $row['closing_date'];
@@ -400,24 +400,16 @@ include 'constants/check-login.php';
 							<div class="GridLex-grid-middle">
 							<div class="GridLex-col-5_xs-12">
 							<div class="job-position">
-							<div class="image">
-							<?php 
-							if ($complogo == null) {
-							print '<center><img alt="image"  src="images/blank.png"/></center>';
-							}else{
-							echo '<center><img alt="image" title="'.$thecompname.'" width="180" height="100" src="data:image/jpeg;base64,'.base64_encode($complogo).'"/></center>';	
-							}
-							?>
-							</div>
+						
 							<div class="content">
 							<h4><?php echo "$title"; ?></h4>
-							<p><?php echo "$thecompname"; ?></p>
+							
 							</div>
 							</div>
 							</div>
 							<div class="GridLex-col-5_xs-8_xss-12 mt-10-xss">
 							<div class="job-location">
-							<i class="fa fa-map-marker text-primary"></i> <?php echo "$jobcountry" ?></strong> - <?php echo "$jobcity" ?>
+							 <?php echo "$jobcountry" ?></strong> - <?php echo "$jobcity" ?>
 							</div>
 							</div>
 							<div class="GridLex-col-2_xs-4_xss-12">
